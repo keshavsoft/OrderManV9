@@ -1,3 +1,8 @@
+import { kschema } from "@keshavsoft/kschema";
+import consfigJson from './config.json' with { type: 'json' };
+
+kschema.loadConfig(consfigJson);
+
 import { exec } from "child_process";
 
 import express from 'express';
