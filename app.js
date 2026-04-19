@@ -41,5 +41,5 @@ server.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
     console.log(`Open here http://localhost:${port}`);
 
-    exec(`start http://localhost:${port}/Tally/Masters/V2/Ledgers/index.html`);
+    exec(`start http://localhost:${port}/Tally/Masters/V3/Ledgers/index.html`);
 });
