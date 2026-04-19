@@ -10,6 +10,7 @@ import { createStore } from "./TableStore/V2/start.js";
 import { applyMode } from "./Core/applyMode.js";
 import { KeshavUIClasses } from "./uiClasses.js";
 import { loadDataFlow } from "./Core/loadDataFlow.js";
+import { loadVerticalOnly } from "./Core/loadVerticalOnly.js";
 
 import { setupServices } from "./Services/setupServices.js";
 import { mountTableUI } from "./UI/mountTableUI.js";
@@ -86,7 +87,7 @@ class KSAiTable {
     async initVertical() {
         this.setupServices();
 
-        await loadDataFlow({
+        await loadVerticalOnly({
             config: this.config,
             services: this.services,
             dataStore: this.dataStore,

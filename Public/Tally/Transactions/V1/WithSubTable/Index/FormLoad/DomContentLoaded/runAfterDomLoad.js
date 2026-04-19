@@ -1,12 +1,10 @@
 import { hookAllListeners } from "./AddListeners/start.js";
 import { formSearchParamsFunc } from "./formSearchParamsFunc.js";
-import { initTable, initVertical } from "../../../../../../KSTableAi/V21/entry.js";
-// import { initVertical } from "../../../KSTableAi/V21/entry.js";
+import { initTable, initVertical } from "../../../../../../../KSTableAi/V22/entry.js";
 
 const runAfterDomLoad = () => {
     buildUi().then();
     hookAllListeners();
-    console.log("DOM Loaded → business logic runs here");
 };
 
 const buildUi = async () => {
@@ -81,7 +79,7 @@ const buildUi = async () => {
             create: "/Api/V1/ItemsTable/Insert",
             update: "",
             delete: "/Api/V9/BillsTable/Delete",
-            read: "/Api/V1/ItemsTable/filter",
+            read: "/Api/V6/ItemsTable/Filter",
             find: "/Api/V1/BillsTable/find",
             dataListEndpoints: {
                 items: "/Api/V1/StockItems/ShowAll",

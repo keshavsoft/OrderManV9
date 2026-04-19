@@ -9,7 +9,7 @@ const config = {
         type: "vertical", // "vertical" | "table" | "vertical-table"
     },
     endPoints: {
-        create: "/Api/V3/BillsTable/Insert",
+        create: "/Api/V4/BillsTable/Insert",
         update: "",
         delete: "/Api/V9/BillsTable/Delete",
         read: "/Api/V1/BillsTable/ShowAll",
@@ -65,6 +65,7 @@ const config = {
         vertical: {
             onSuccess: async (res) => {
                 const fromReponse = await res.text();
+                console.log("fromReponse : ", fromReponse);
 
                 window.location.href = `../WithSubTable/index.html?pk=${fromReponse}`;
             }

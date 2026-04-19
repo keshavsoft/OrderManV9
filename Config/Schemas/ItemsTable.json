@@ -90,6 +90,11 @@
       "unique": false,
       "isConsider": true,
       "showInUi": true
+    },
+    {
+      "field": "pk",
+      "title": "pk",
+      "primary": true
     }
   ],
   "data": [],
