@@ -22,8 +22,7 @@ const buildUi = async () => {
             create: "/Api/V9/BillsTable/Insert",
             update: "",
             delete: "/Api/V9/BillsTable/Delete",
-            read: "/Api/V1/BillsTable/ShowAll",
-            find: "/Api/V1/BillsTable/find"
+            find: "/Api/V6/BillsTable/find"
         },
         options: {
             firstRow: {
@@ -76,14 +75,14 @@ const buildUi = async () => {
             type: "table", // "vertical" | "table" | "vertical-table"
         },
         endPoints: {
-            create: "/Api/V1/ItemsTable/Insert",
+            create: "/Api/V6/ItemsTable/Insert",
             update: "",
             delete: "/Api/V9/BillsTable/Delete",
-            read: "/Api/V6/ItemsTable/Filter",
-            find: "/Api/V1/BillsTable/find",
+            read: "/Api/V6/ItemsTable/FilterColumns",
+            find: "/Api/V6/BillsTable/find",
             dataListEndpoints: {
-                items: "/Api/V1/StockItems/ShowAll",
-                ledgers: "/Api/V1/LedgerNames/ShowAll"
+                items: "/Api/V6/StockItems/ShowAll",
+                ledgers: "/Api/V6/LedgerNames/ShowAll"
             }
         },
         options: {

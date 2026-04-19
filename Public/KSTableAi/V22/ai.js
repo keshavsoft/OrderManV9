@@ -21,7 +21,7 @@ class KSAiTable {
     constructor(inConfig) {
         let config = normalizeConfig(inConfig);
         // config = applyMode(config);
-        validateConfig(config);
+        // validateConfig(config);
         // debugger;
         const { containerId, options, endPoints, columnsConfig,
             uiClasses, callbacks } = config;
@@ -87,7 +87,7 @@ class KSAiTable {
     async initVertical() {
         this.setupServices();
 
-        await loadVerticalOnly({
+        await loadDataFlow({
             config: this.config,
             services: this.services,
             dataStore: this.dataStore,

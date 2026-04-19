@@ -12,7 +12,6 @@ const config = {
         create: "/Api/V4/BillsTable/Insert",
         update: "",
         delete: "/Api/V9/BillsTable/Delete",
-        read: "/Api/V1/BillsTable/ShowAll",
         find: "/Api/V9/BillsTable/find",
         dataListEndpoints: {
             ledgers: "/Api/V3/LedgerNames/ShowAll"

@@ -26,7 +26,7 @@ const initRender = ({ inContainerEl, inDataStore, inDom, inServices, inOptions, 
             inData: data
         });
     };
-
+debugger;
     if (inConfig.layout.type === "vertical") {
         const inIsDisabled = inOptions.vertical.isDisabled;
         const showSaveButton = inOptions.vertical.showSaveButton;
