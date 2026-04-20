@@ -1,6 +1,6 @@
 import { hookAllListeners } from "./AddListeners/start.js";
 import { formSearchParamsFunc } from "./formSearchParamsFunc.js";
-import { initTable, initVertical } from "../../../../../../../KSTableAi/V22/entry.js";
+import { initTable, initVertical } from "../../../../../../../KSTableAi/V23/entry.js";
 
 const runAfterDomLoad = () => {
     buildUi().then();
