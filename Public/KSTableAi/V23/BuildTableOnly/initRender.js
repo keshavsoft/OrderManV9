@@ -25,7 +25,7 @@ const initRender = ({ inContainerEl, inDataStore, inDom, inServices, inOptions, 
             inEndPoint: inEndPoints.delete,
             id: presentPk
         })
-
+        // debugger;
         if (fromDelete.ok) {
             if (inConfig?.callbacks?.table?.onDelete) {
                 const fromClient = await inConfig?.callbacks?.table?.onDelete({ toDeletePk: presentPk });

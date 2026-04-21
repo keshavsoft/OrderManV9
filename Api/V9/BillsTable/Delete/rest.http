@@ -1,1 +1,1 @@
-DELETE http://localhost:3000/Api/V9/BillsTable/Delete/2
+DELETE http://localhost:3000/Api/V9/BillsTable/Delete/1
