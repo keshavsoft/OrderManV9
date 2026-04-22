@@ -1,4 +1,4 @@
-// import { initTableOnly } from "../../../../../../../../../KSTableAi/V21/entry.js";
+import { initTableOnly } from "../../../../../../../../../KSTableAi/V24/entry.js";
 
 const clickFuncToRun = () => {
     buildUi().then();
@@ -16,7 +16,7 @@ const buildUi = async () => {
         endPoints: {
             create: "/Api/V9/ItemsTable/Insert",
             update: "",
-            read: "/Api/V3/StockItems/ShowAll",
+            read: "/Api/V11/StockItems/ShowAll",
             find: "/Api/V9/BillsTable/find"
         },
         options: {
@@ -80,8 +80,8 @@ const buildUi = async () => {
         }
     };
 
-    // await initTableOnly(config);
-    window.KSTable.initTableOnly(config);
+    await initTableOnly(config);
+    // window.KSTable.initTableOnly(config);
 };
 
 export { clickFuncToRun };

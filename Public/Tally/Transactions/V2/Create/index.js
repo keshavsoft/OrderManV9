@@ -1,4 +1,4 @@
-import { initVertical } from "../../../../KSTableAi/V22/entry.js";
+import { initVertical } from "../../../../KSTableAi/V24/entry.js";
 
 const config = {
     containerId: 'kSTableContainer',
@@ -9,12 +9,12 @@ const config = {
         type: "vertical", // "vertical" | "table" | "vertical-table"
     },
     endPoints: {
-        create: "/Api/V4/BillsTable/Insert",
+        create: "/Api/V11/BillsTable/Insert",
         update: "",
         delete: "/Api/V9/BillsTable/Delete",
         find: "/Api/V9/BillsTable/find",
         dataListEndpoints: {
-            ledgers: "/Api/V3/LedgerNames/ShowAll"
+            ledgers: "/Api/V11/LedgerNames/ShowAll"
         }
     },
     options: {
