@@ -1,6 +1,7 @@
 // /UI/mountTableUI.js
 
 import { initRender } from "../BuildTotal/initRender.js";
+// import { initRender } from "../BuildTableOnly/initRender.js";
 
 export const mountTableUI = ({
     containerEl,
