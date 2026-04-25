@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KeshavSoft</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Heroicons (SVG inline, no extra CDN needed) -->
+
+    <style>
+        mark {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <main class="flex-grow">
+        <!-- NAVBAR -->
+
+
+
+
+        <!-- TEST NAV (FORCED MOBILE STYLE) -->
+        <nav class="bg-gray-800 text-white mt-4">
+            <div class="max-w-6xl mx-auto px-4 py-3">
+
+                <div class="text-lg font-semibold mb-3">
+                    Masters (Mobile Test)
+                </div>
+
+                <ul class="flex flex-col space-y-4 px-2 py-2">
+
+                    <li class="bg-gray-700 px-3 py-2 rounded">Ledgers</li>
+                    <li class="bg-gray-700 px-3 py-2 rounded">StockItems</li>
+                    <li class="bg-gray-700 px-3 py-2 rounded">Bills</li>
+                    <li class="bg-gray-700 px-3 py-2 rounded">Import</li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+
+        <nav class="bg-gray-900 text-white relative z-50">
+            <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+
+                <!-- LEFT: BRAND -->
+                <div class="text-lg font-semibold">
+                    Masters
+                </div>
+
+                <!-- RIGHT: HAMBURGER (just visible, no logic) -->
+                <button class="md:hidden text-2xl select-none">
+                    ☰
+                </button>
+
+                <!-- MENU (ALWAYS VISIBLE FOR TESTING) -->
+                <ul class="absolute left-0 top-full w-full bg-gray-800
+             flex flex-col space-y-4 px-6 py-4
+             md:static md:flex-row md:bg-transparent md:space-y-0 md:space-x-10 md:p-0 md:w-auto">
+
+                    <li>Ledgers</li>
+                    <li>StockItems</li>
+                    <li>Bills</li>
+                    <li>Import</li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+
+        <div id="kSTableContainer">
+
+            <main class="flex-grow p-6 bg-gray-100">
+                <div id="cards" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                    <div class="bg-white rounded-xl shadow-sm border p-5 hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+
+                            <!-- Left -->
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800">Ledgers</h3>
+                                <p class="text-sm text-gray-500 mt-1">120 rows</p>
+                            </div>
+
+                            <!-- Right -->
+                            <button
+                                class="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition">
+                                Show
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+
+    </main>
+    <footer class="bg-gray-200 text-gray-700 text-center py-4">
+        <div class="max-w-6xl mx-auto px-4">
+            © 2026 KeshavSoft • Contact
+        </div>
+    </footer>
+
+    <!-- <script src="https://keshavsoft.com/cdn/KsTable/V7/kstable.js"></script> -->
+    <!-- 
+    <script>
+        (function () {
+            function loadFromCDN() {
+                console.log("⚠️ KSTable not found, loading from CDN...");
+
+                const script = document.createElement("script");
+                script.src = "https://keshavsoft.com/cdn/KsTable/V8/kstable.js";
+
+                script.onload = () => {
+                    console.log("✅ KSTable loaded from CDN");
+                };
+
+                document.head.appendChild(script);
+            }
+
+            // Wait a little for extension injection
+            setTimeout(() => {
+                if (!window.KSTable) {
+                    loadFromCDN();
+                } else {
+                    console.log("✅ KSTable from extension");
+                }
+            }, 1000); // small delay for extension
+        })();
+    </script> -->
+
+    <script type="module" src="./Index/start.js"></script>
+</body>
+
+</html>
