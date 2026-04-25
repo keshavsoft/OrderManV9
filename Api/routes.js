@@ -10,6 +10,7 @@ import { router as routerFromV8 } from "./V8/routes.js";
 import { router as routerFromV9 } from "./V9/routes.js";
 import { router as routerFromV10 } from "./V10/routes.js";
 import { router as routerFromV11 } from "./V11/routes.js";
+import { router as routerFromV12 } from "./V12/routes.js";
 
 const router = express.Router();
 router.use('/V1', routerFromV1);
@@ -23,5 +24,6 @@ router.use('/V8', routerFromV8);
 router.use('/V9', routerFromV9);
 router.use('/V10', routerFromV10);
 router.use('/V11', routerFromV11);
+router.use('/V12', routerFromV12);
 
 export { router };
