@@ -1,0 +1,16 @@
+POST http://localhost:9000
+Content-Type: application/json
+TallyRequest: Export
+Type: Data
+Id: Day Book
+
+{
+  "static_variables": [
+    { "name": "svExportFormat", "value": "jsonex" },
+    { "name": "svCurrentCompany", "value": "Mani9" },
+
+    { "name": "svFromDate", "value": "20260301" },
+    { "name": "svToDate", "value": "20260301" },
+    { "name": "svCurrentDate", "value": "20260317" }
+  ]
+}

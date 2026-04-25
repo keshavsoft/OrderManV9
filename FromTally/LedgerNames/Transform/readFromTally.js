@@ -22,7 +22,7 @@ const startFunc = async () => {
         const LocalReponseData = await response.json();
 
         console.log("TALLY RESPONSE:");
-        console.log(LocalReponseData.data.collection[0]);
+        // console.log(LocalReponseData.data.collection[0]);
 
         return LocalReponseData;
     } catch (err) {
