@@ -83,7 +83,19 @@ const buildUi = async () => {
 
     // await initTableOnly(config);
 
-    window.KSTable.initTableOnly(config);
+    // window.KSTable.initTableOnly(config);
+    await callKSTable(config);
+};
+
+const callKSTable = async (config) => {
+    if (window.KSTable?.initTableOnly) {
+        console.log("table loaded from window.KSTable");
+
+        return window.KSTable.initTableOnly(config); // extension or CDN
+    } else {
+        const { initTableOnly } = await import("../../../../../../../../../KSTableAi/V25/entry.js"); // local
+        return initTableOnly(config);
+    }
 };
 
 export { clickFuncToRun };
