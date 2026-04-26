@@ -1,4 +1,4 @@
-import { initTableOnly } from "../../../../../../../../../KSTableAi/V25/entry.js";
+// import { initTableOnly } from "../../../../../../../../../KSTableAi/V25/entry.js";
 
 const clickFuncToRun = () => {
     buildUi().then();
@@ -81,9 +81,9 @@ const buildUi = async () => {
         }
     };
 
-    await initTableOnly(config);
+    // await initTableOnly(config);
 
-    // window.KSTable.initTableOnly(config);
+    window.KSTable.initTableOnly(config);
 };
 
 export { clickFuncToRun };

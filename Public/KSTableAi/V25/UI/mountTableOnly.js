@@ -15,7 +15,7 @@ export const mountTableOnlyUI = ({
     callbacks,
     inConfig
 }) => {
-    debugger
+    // debugger
     buildFullUI({
         containerEl: containerEl,
         inTableName: inConfig.tableName

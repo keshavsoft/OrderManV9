@@ -22,81 +22,47 @@
     <main class="flex-grow">
         <!-- NAVBAR -->
 
-        <nav class="bg-gray-900 text-white relative z-50">
-            <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative">
 
-                <!-- LEFT: BRAND -->
-                <div class="text-lg font-semibold">
-                    Create Vertical
+        <!-- MOBILE NAV (collapsed with hamburger) -->
+        <nav class="bg-gray-800 text-white">
+
+            <div class="mx-auto px-3 py-3 
+            max-w-3xl 
+            lg:max-w-5xl 
+            xl:max-w-full xl:px-10">
+
+                <div class="flex flex-wrap items-center justify-between md:justify-center lg:justify-start">
+                    <div class="text-xl font-semibold md:mr-8">Masters (Mobile)</div>
+                    <button onclick="document.getElementById('menu').classList.toggle('hidden')"
+                        class="text-xl px-4 py-1 md:hidden">
+                        ☰
+                    </button>
+
+
+                    <!-- collapsible menu -->
+                    <ul id="menu" class="w-full hidden flex flex-col space-y-2 mt-4
+md:flex md:flex-row md:space-y-0 md:gap-4 md:mt-0 md:w-auto md:flex-wrap
+ lg:ml-auto">
+                    </ul>
+
                 </div>
 
-                <!-- RIGHT: HAMBURGER (MOBILE ONLY) -->
-                <button id="menuBtn" onclick="toggleMenu()" class="md:hidden text-2xl select-none">
-                    ☰
-                </button>
 
-                <!-- RIGHT: MENU -->
-                <ul id="menu" class="absolute left-0 top-full w-full bg-gray-800
-overflow-hidden max-h-0 opacity-0 transition-all duration-300
-flex-col space-y-4 px-6 py-4
-md:static md:flex md:flex-row md:bg-transparent md:shadow-none
-md:space-y-0 md:space-x-10 md:p-0 md:w-auto md:max-h-none md:opacity-100" transition-all duration-300 ease-in-out>
-
-                    <!-- ITEM -->
-                    <li onclick="closeMenu()"
-                        class="flex justify-between items-center md:flex-col md:items-center cursor-pointer hover:bg-gray-700 px-2 py-1 rounded transition-colors duration-200">
-                        <span class="md:order-2 font-medium">Home</span>
-                        <svg class="w-6 h-6 md:order-1 md:mb-1" stroke-width="0.75" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"
-                                d="M3 10l9-7 9 7v10a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V10z" />
-                        </svg>
-                    </li>
-
-
-                    <li>
-                        <a href="../Delete/index.html"
-                            class="flex justify-between items-center md:flex-col md:items-center cursor-pointer hover:bg-gray-700 px-2 py-1 rounded transition-colors duration-200">
-                            <span class="md:order-2 font-medium">Delete</span>
-                            <svg class="w-6 h-6 md:order-1 md:mb-1" stroke-width="0.75" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"
-                                    d="M3 7h18M3 12h18M3 17h18" />
-                            </svg>
-                        </a>
-                    </li>
-
-
-                    <li id="StockItemsId"
-                        class="flex justify-between items-center md:flex-col md:items-center cursor-pointer hover:bg-gray-700 px-2 py-1 rounded transition-colors duration-200">
-                        <span class="md:order-2 font-medium">StockItems</span>
-                        <svg class="w-6 h-6 md:order-1 md:mb-1" stroke-width="0.75" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"
-                                d="M20 13V7a2 2 0 00-2-2h-3V3H9v2H6a2 2 0 00-2 2v6m16 0v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16 0H4" />
-                        </svg>
-                    </li>
-
-
-                    <li onclick="closeMenu()"
-                        class="flex justify-between items-center md:flex-col md:items-center cursor-pointer hover:bg-gray-700 px-2 py-1 rounded transition-colors duration-200">
-                        <span class="md:order-2 font-medium">Bills</span>
-                        <svg class="w-6 h-6 md:order-1 md:mb-1" stroke-width="0.75" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"
-                                d="M9 14l2 2 4-4M7 7h10M7 11h10M5 3h14a2 2 0 012 2v16l-3-2-3 2-3-2-3 2-3-2-3 2V5a2 2 0 012-2z" />
-                        </svg>
-                    </li>
-
-                </ul>
             </div>
         </nav>
 
-        <div id="kSTableContainer" class="max-w-6xl mx-auto p-2">
-            <div class="dataListContainerClass">
+        <!-- body -->
+        <section class="mx-auto px-3 py-6 
+                max-w-3xl 
+                lg:max-w-5xl 
+                xl:max-w-6xl">
 
+            <!-- Table container -->
+
+            <div id="kSTableContainer">
             </div>
-        </div>
+        </section>
+
 
 
     </main>
@@ -106,7 +72,8 @@ md:space-y-0 md:space-x-10 md:p-0 md:w-auto md:max-h-none md:opacity-100" transi
         </div>
     </footer>
 
-    <script type="module" src="./index.js"></script>
+    <!-- <script type="module" src="./index.js"></script> -->
+  <script type="module" src="./Index/start.js"></script>
 </body>
 
 </html>

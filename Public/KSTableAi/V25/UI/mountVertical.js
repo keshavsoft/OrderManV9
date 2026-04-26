@@ -1,6 +1,11 @@
 // /UI/mountTableUI.js
 
+// <div class="dataListContainerClass">
+
+//             </div>
+
 import { initRender } from "../BuildVertical/initRender.js";
+import { buildFullUI } from "./compose/buildFullUI.js";
 
 export const mountVerticalUI = ({
     containerEl,
@@ -14,6 +19,8 @@ export const mountVerticalUI = ({
     callbacks,
     inConfig
 }) => {
+    buildFullUI({ containerEl, inIsTableNeeded: false });
+
     initRender({
         inContainerEl: containerEl,
         inDataStore: dataStore,
