@@ -1,0 +1,10 @@
+[Collection: KeshavStockItems]
+    Type    : StockItem
+    Fetch   : Name, Parent, Category, BaseUnits, AdditionalUnits,
+              GSTApplicable, GSTTypeOfSupply, TaxClassificationName,
+              HSNCode, ClosingBalance, OpeningBalance,
+              CostingMethod, ValuationMethod,
+              IsBatchWiseOn, IsPerishableOn,
+              IsCostTrackingOn, IsGSTApplicable
+
+    Format  : JSON

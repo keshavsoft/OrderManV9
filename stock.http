@@ -1,0 +1,31 @@
+POST http://localhost:9000
+Content-Type: application/json
+TallyRequest: Export
+Type: collection
+Id: StockItem
+
+{
+    "static_variables": [
+        {
+            "name": "svExportFormat",
+            "value": "jsonex"
+        },
+        {
+            "name": "svCurrentCompany",
+            "value": "Mani9"
+        }
+    ],
+    "filter": [
+    {
+      "field": "$Name",
+      "operator": "=",
+      "value": "Coke-Mts-5%"
+    }
+  ],
+  "fetch": [
+    "Name",
+    "Parent",
+    "BaseUnits",
+    "GSTTypeOfSupply"
+  ]
+}

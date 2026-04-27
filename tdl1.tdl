@@ -1,0 +1,28 @@
+[Collection: KeshavStockItems]
+    Type    : StockItem
+    Fetch   : Name, Parent, Category, BaseUnits,
+              GSTApplicable, GSTTypeOfSupply
+
+    Format  : JSON
+
+    ; Attach GST collection
+    Child Of : KeshavGSTDetails
+
+
+[Collection: KeshavGSTDetails]
+    Type    : GSTDetails
+    Fetch   : ApplicableFrom, CalculationType, Taxability
+
+    Child Of : KeshavRateDetails
+
+
+[Collection: KeshavRateDetails]
+    Type    : GSTStateWiseDetails
+    Fetch   : StateName
+
+    Child Of : KeshavGSTSlabs
+
+
+[Collection: KeshavGSTSlabs]
+    Type    : GSTRateDetails
+    Fetch   : GSTRateDutyHead, GSTRate

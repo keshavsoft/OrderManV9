@@ -4,7 +4,7 @@ const dataPath = "./Data/LedgerNames.json";
 
 const StartFunc = async () => {
     const dataFromTally = await readFromTally();
-    console.log("dataFromTally.data.collection : ", dataFromTally.data.collection[0]);
+    // console.log("dataFromTally.data.collection : ", dataFromTally.data.collection[0]);
 
     const LocalNewArray = dataFromTally.data.collection.map(element => {
         return {

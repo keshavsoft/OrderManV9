@@ -8,5 +8,10 @@
             "name": "svCurrentCompany",
             "value": "Mani9"
         }
+    ],
+    "fetch_List": [
+        "Name",
+        "Parent",
+        "Closing Balance"
     ]
 }

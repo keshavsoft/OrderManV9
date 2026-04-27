@@ -8,7 +8,8 @@
         "hsnitemsource": "",
         "gstovrdntypeofsupply": "Goods",
         "gstrateinferapplicability": "As per Masters/Company",
-        "gsthsnname": "73251000",
+        "gsthsnname": "540720",
+        "gsthsndescription": "Woven Fabric",
         "gsthsninferapplicability": "As per Masters/Company",
         "isdeemedpositive": false,
         "isgstassessablevalueoverridden": false,
@@ -68,6 +69,31 @@
             }
         ],
         "ratedetails": [
+            {
+                "gstratedutyhead": "CGST",
+                "gstratevaluationtype": "Based on Value",
+                "gstrate": " 2.50"
+            },
+            {
+                "gstratedutyhead": "SGST/UTGST",
+                "gstratevaluationtype": "Based on Value",
+                "gstrate": " 2.50"
+            },
+            {
+                "gstratedutyhead": "IGST",
+                "gstratevaluationtype": "Based on Value",
+                "gstrate": " 5"
+            },
+            {
+                "gstratedutyhead": "Cess",
+                "gstratevaluationtype": "\u0004 Not Applicable"
+            },
+            {
+                "gstratedutyhead": "State Cess",
+                "gstratevaluationtype": "Based on Value"
+            }
+        ],
+        "ratedetails1": [
             {
                 "gstratedutyhead": "CGST",
                 "gstratevaluationtype": "Based on Value",

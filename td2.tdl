@@ -1,0 +1,4 @@
+[Collection: KeshavStockItems]
+Type : StockItem
+Fetch : Name, Parent, Category, BaseUnits, GSTApplicable, GSTTypeOfSupply, GSTDetails
+Format : JSON

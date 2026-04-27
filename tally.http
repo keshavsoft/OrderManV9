@@ -1,11 +1,11 @@
 POST http://localhost:9000
 Content-Type: application/json
 TallyRequest: Export
-Type: collection
+Type: Object
 Id: StockItem
+SubType: "130ddfef-7839-4331-b2a2-0b5fbce72f04-000044c8"
 
 {
- 
     "static_variables": [
         {
             "name": "svExportFormat",
@@ -15,6 +15,11 @@ Id: StockItem
             "name": "svCurrentCompany",
             "value": "Mani9"
         }
-    ]
- 
+    ],
+  "fetch_list": [
+  "Name",
+  "Parent",
+  "Category",
+  "BaseUnits"
+]
 }

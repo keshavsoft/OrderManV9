@@ -1,0 +1,14 @@
+POST http://localhost:9000
+Content-Type: application/json
+TallyRequest: Export
+Type: Collection
+Id: KeshavStockItems
+
+{
+  "static_variables": [
+    {
+      "name": "svExportFormat",
+      "value": "jsonex"
+    }
+  ]
+}
