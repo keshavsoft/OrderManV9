@@ -1,6 +1,6 @@
 import { hookAllListeners } from "./AddListeners/start.js";
 import { formSearchParamsFunc } from "./formSearchParamsFunc.js";
-import { initTable, initVertical } from "../../../../../../../KSTableAi/V24/entry.js";
+import { initTable, initVertical } from "../../../../../../../KSTableAi/V25/entry.js";
 
 const runAfterDomLoad = () => {
     buildUi().then();
@@ -22,7 +22,7 @@ const buildUi = async () => {
             create: "/Api/V9/BillsTable/Insert",
             update: "",
             delete: "/Api/V9/BillsTable/Delete",
-            find: "/Api/V6/BillsTable/find"
+            find: "/Api/V12/BillsTable/find"
         },
         options: {
             firstRow: {
@@ -75,14 +75,13 @@ const buildUi = async () => {
             type: "table", // "vertical" | "table" | "vertical-table"
         },
         endPoints: {
-            create: "/Api/V6/ItemsTable/Insert",
+            create: "/Api/V12/ItemsTable/Insert",
             update: "",
             delete: "/Api/V9/BillsTable/Delete",
-            read: "/Api/V6/ItemsTable/FilterColumns",
-            find: "/Api/V6/BillsTable/find",
+            read: "/Api/V12/ItemsTable/FilterColumns",
+            find: "/Api/V12/BillsTable/find",
             dataListEndpoints: {
-                items: "/Api/V6/StockItems/ShowAll",
-                ledgers: "/Api/V6/LedgerNames/ShowAll"
+                items: "/Api/V12/StockItems/ShowAll"
             }
         },
         options: {

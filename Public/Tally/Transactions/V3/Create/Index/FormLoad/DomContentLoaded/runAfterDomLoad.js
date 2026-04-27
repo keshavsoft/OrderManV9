@@ -12,7 +12,7 @@ const config = {
         type: "vertical", // "vertical" | "table" | "vertical-table"
     },
     endPoints: {
-        create: "/Api/V11/BillsTable/Insert",
+        create: "/Api/V12/BillsTable/Insert",
         update: "",
         delete: "/Api/V9/BillsTable/Delete",
         find: "/Api/V9/BillsTable/find",
@@ -66,14 +66,17 @@ const config = {
     callbacks: {
         vertical: {
             onSuccess: async (res) => {
-                const fromReponse = await res.text();
-                console.log("fromReponse : ", fromReponse);
+                console.log("11111111111 : ", res);
+
+                const fromReponse = await res.json();
+                // console.log("fromReponse : ", fromReponse);
+                window.location.href = `../WithSubTable/index.html?pk=${fromReponse.pk}`;
             }
         }
     }
 };
 
-const runAfterDomLoad = () => {
+const runAfterDomLoad = async () => {
     const headerConfig = {
         items: [
             {
@@ -123,8 +126,19 @@ const runAfterDomLoad = () => {
     };
 
     initHeader(headerConfig);
+    await callKSTable(config);
+    // initVertical(config).then();
+};
 
-    initVertical(config).then();
+const callKSTable = async (config) => {
+    if (window.KSTable?.initTableOnly) {
+        console.log("table loaded from window.KSTable");
+
+        return window.KSTable.initTableOnly(config); // extension or CDN
+    } else {
+        const { initVertical } = await import("../../../../../../../../../KSTableAi/V25/entry.js"); // local
+        return initVertical(config);
+    }
 };
 
 export { runAfterDomLoad };
