@@ -29,6 +29,14 @@
       "field": "pk",
       "title": "pk",
       "primary": true
+    },
+    {
+      "field": "GstRegistrationType",
+      "title": "GstRegistrationType"
+    },
+    {
+      "field": "PartyGSTIN",
+      "title": "PartyGSTIN"
     }
   ],
   "data": [],
